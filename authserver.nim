@@ -58,7 +58,9 @@ post "/userupdate":
     resp "Failed"
 
 proc init() =
-  dumpEnv()
+  #dumpEnv()
+
+
   var redisHost: string
   var redisPort: string
   var redisInfo = parseDockerHostPort("REDIS_PORT", "localhost", "6379")

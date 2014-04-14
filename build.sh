@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker build -t runvnc/authserver .
+sudo docker build $1 -t runvnc/authserver .
